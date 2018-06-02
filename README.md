@@ -2,9 +2,16 @@
 
 Bike Rent
 =========
- Java web dynamic project for finance managing of city automatic bicycle rent. 
+ Automatic Bicycle Rent For City 
 
-[![Build Status](https://travis-ci.org/babroval/bike-rent.svg?branch=master)](https://travis-ci.org/babroval/bike-rent)
+To use one of the many bikes on bike stations of the city, the customer needs to register on the site, which lists personal data (name, passport number, credit card number, etc.). The site can also be viewed online information about the number of bikes in parking lots. To use the rental service, you need to have a balance of bank card not less than 100$.
+
+Conditions:
+
+1 - the funds will be blocked on the client's account since the beginning of the rental,
+
+2 - in case of timely return bike to any rent station, blocked funds will be available again to the client, while part of the funds may be subject to write-off according to the rates for services. 
+
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/babroval/bike-rent/blob/master/LICENSE)
 ```
 	@RequestMapping(value = { "/order-{numPoint}" }, method = RequestMethod.GET)
@@ -40,7 +47,8 @@ Bike Rent
 			orderService.openOrder(order, numPoint, login);
 			Order prossesingOrder = orderService.getProssesingOrderByLogin(login);
 			model.addAttribute("success", "Your order \"" 
-							  + prossesingOrder.getId() + "\" confirmed successfully.");
+				  + prossesingOrder.getId() 
+				  + "\" confirmed successfully.");
 			return "orderSuccess";
 		}
 		orderService.closeOrder(order, numPoint);
