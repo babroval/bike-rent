@@ -1,0 +1,219 @@
+* {margin: 0; padding: 0;}
+body {margin: auto; font-family: Arial;}
+img {border: none;}
+ul, ol {list-style: none;}
+a {color: #fff; text-decoration: none;}
+a:hover {color: #fff; text-decoration: underline;}
+.clearfix:after { content: ''; display: table; clear: both;}
+h2 {margin: 10px 0; font-size: 32px; color: #677798;}
+p {font-size: 16px; color: #677798;}
+form fieldset {margin-bottom: 20px; background-color: #ebeff8; border: 2px dotted #677798;
+		padding: 20px 0;}
+
+/*header*/
+h1 {display: none;}
+.header {background-color: #abc6fb;}
+.logo { width: 1000px; margin: auto; 
+	background: url(../img/dif/head_01.jpg) no-repeat 150px 0; background-size: contain;}
+.logo img {padding: 45px 30px 45px 30px; margin-bottom: -4px; width: 170px;}
+.header .strip_menu {background-color: #3d31c5;}
+.nav {width: 1000px; margin: auto;}
+.main li { margin: 10px 0 10px 20px; display: inline-block; font-weight: bold;}
+.nav .main { float: left;}
+.sign_up li { margin: 10px 30px 10px 0; display: inline-block;}
+.sign_up {float: right; }
+
+/*content*/
+.content h2 {font-size: 72px; color: #fff; text-align: center;
+	padding: 130px 0; font-weight: normal; margin: 0;
+	background-image: url(../img/dif/gorod2.jpg); background-size: cover; }
+.info img {height: 450px;}
+.info input {display: none;}
+.info label { display: inline-block; font-size: 16px; width: 250px; color: #fff;
+	padding: 10px 0; vertical-align: middle;}
+.submenu {text-align: center; font-size: 0; background-color: #3d31c5; }
+.submenu label {cursor: pointer;}
+.tab_submenu {width: 1000px; margin: auto; position: relative; height: 450px; overflow: hidden;}
+.tab_submenu input:checked + div {z-index: 10;}
+.tab_submenu_1 ol {height: 450px; padding-top: 30px;}
+.tab_submenu_1 li { width: 430px; display: inline-block; text-align: left;
+	margin: 20px 5px 0 5px; vertical-align: top; padding: 15px; height: 145px; overflow: hidden;}
+.tab_submenu_1 li:hover {background-color: #f2f2f2;}
+.tab_submenu_1 li:hover a {text-decoration: none;}
+.tab_submenu_1 ol h4 {font-size: 18px; padding: 10px 0;}
+.tab_submenu_1 li:hover a h4 {text-decoration: underline; color: grey;}
+.tab_submenu_1 > ol > li > a {color: #000;}	
+.tab_submenu_1 > ol > li > a > img {width: 180px; margin-right: 15px; height: 120px; float: left; display: block;}
+.tab_submenu_1 > ol > li:nth-child(2n) > a > img {float: right; margin: 0 0 0 15px;}
+.tab_submenu_1, .tab_submenu_2, .tab_submenu_3, .tab_submenu_4 { position: absolute;
+	left: 0px; top: 0; width: 100%; text-align: center; background-color: #fff;}
+.tab_submenu_1:after {content:''; position: absolute; border: 25px solid transparent; border-top: 18px solid #3d31c5; left: 10%; top: 0;}
+.tab_submenu_2:after {content:''; position: absolute; border: 25px solid transparent; border-top: 18px solid #3d31c5; left: 350px; top: 0;}
+.tab_submenu_3:after {content:''; position: absolute; border: 25px solid transparent; border-top: 18px solid #3d31c5; left: 600px; top: 0;}
+.tab_submenu_4:after {content:''; position: absolute; border: 25px solid transparent; border-top: 18px solid #3d31c5; left: 850px; top: 0;}
+.tab_submenu_4 ol {height: 450px; padding-top: 30px;}
+.tab_submenu_4 li { width: 420px; display: inline-block; text-align: left; 
+	margin: 30px 15px 0 15px; vertical-align: top; height: 155px; overflow: hidden;
+	position: relative;}
+.tab_submenu_4 > ol > li > img {width: 100%; height: auto;}
+.tab_submenu_4 ul > li > a {display: block; width: 420px; height: 155px; text-align: left; }
+.tab_submenu_4 ul > li > a:hover {background-color: rgba(0, 0, 0, .5); text-decoration: none;}
+.tab_submenu_4 ul > li > a > span {display: inline-block; width: 420px;
+	font-size: 26px; margin-top: 95px; padding-left: 20px;
+	background-color: rgba(0, 0, 0, .5);}
+.tab_submenu_4 ol > li > ul > li  > a > .price_tour {font-size: 20px; margin-top: 0;}
+.tab_submenu_4 ol > li > ul > li {position: absolute; left: -15px; top: -30px;}
+
+/*news*/
+.news {padding: 30px 0; text-align: center;}
+.news ol {height: 450px; padding-top: 30px;}
+.news ol li { width: 430px; display: inline-block; text-align: left;
+	margin: 20px 5px 0 5px; vertical-align: top; padding: 15px; height: 145px; overflow: hidden;}
+.news ol li:hover {background-color: #f2f2f2;}
+.news ol li:hover a {text-decoration: none;}
+.news ol h4 {font-size: 18px; padding: 10px 0;}
+.news li:hover a h4 {text-decoration: underline; color: grey;}
+.news > ol > li > a {color: #000;}	
+.news > ol > li > a > img {width: 180px; margin-right: 15px; height: 120px; float: left; display: block;}
+.news > ol > li:nth-child(2n) > a > img {float: right; margin: 0 0 0 15px;}
+.news input[type="submit"] {font-size: 18px; background: #4791d2; border: none; color: #fff;
+	padding: 5px 15px; display: inline-block;}
+.news input[type="submit"]:hover {background: #3d31c5;}
+
+/*map*/
+.map {width: 100%;  position: relative;}
+.map img {width: 100%;}
+.map .rental {border: 0.5vw solid red; border-radius: 50%; width: 1vw; height: 1vw;
+	position: absolute; background: #fff;}
+.map .number1 {left: 30%; top: 30%;}
+.map .number2 {left: 50%; top: 50%;}
+.map .number3 {left: 70%; top: 33%;}
+.map .number4 {left: 44%; top: 60%;}
+.map > .rental > div {position: absolute; left: -3vw; top: -14vw; width: 14vw; border: 2px solid grey;
+	background: #fff; padding: 0.6vw; display: none; }
+.map > .rental > div > span {font-size: 1.5vw; font-weight: bold; display: block; text-align: center;}
+.map > .rental > div:before {content: ''; position: absolute; border: 1vw solid transparent;
+	border-top: 1vw solid grey; left: 15%; top: 100%;}
+.map > .rental > div:after {content: ''; position: absolute; border: 0.7vw solid transparent;
+	border-top: 0.7vw solid #fff; left: 17%; top: 100%;}
+.map > .rental > div > div {font-size: 1.5vw;}
+.map > .rental:hover > div {display: block;}
+.map input[type="submit"] {font-size: 18px; background: #4791d2; border: none; color: #fff;
+	padding: 5px 15px; display: inline-block; margin-top: 10px;}
+.map input[type="submit"]:hover {background: #3d31c5;}
+
+
+/*contact*/
+.contact {padding: 30px 0; text-align: center; font-size: 0;  min-height: 300px;}
+.contact form {width: 50%; box-sizing: border-box; display: inline-block; font-size: 14px; 
+	text-align: right; margin: 20px 0; padding-right: 10px; vertical-align: top;}
+.contact input[type="text"], .contact input[type="email"] {width: 181px; height: 40px;
+		padding: 0 10px; border: 2px solid #bec3c7; font-size: 14px; background: #f2f2f2;}
+.contact input[type="email"] {margin-left: 15px;}
+.contact textarea {width: 408px; padding: 10px; font-size: 14px; background: #f2f2f2;
+		height: 130px; margin: 20px 0; border: 2px solid #bec3c7; resize: none; }
+.contact input[type="submit"] {font-size: 18px; background-color: #4791d2; color: #fff;
+	border: none; padding: 10px 20px; display: inline-block;}
+.contact input[type="submit"]:hover {background: #3d31c5;}
+
+.contact textarea:focus, .contact input[type="email"]:focus, .contact input[type="text"]:focus {box-shadow: 0 0 0px 1px #4791d2; outline: none; border: 2px solid #4791d2;}
+.contact input[type="text"]:focus::-webkit-input-placeholder, .contact input[type="email"]:focus::-webkit-input-placeholder,
+.contact textarea:focus::-webkit-input-placeholder {color: #f2f2f2;}
+.contact ul {display: inline-block; text-align: left;
+		width: 50%; box-sizing: border-box; font-size: 16px; margin: 20px 0; padding-left: 10px; vertical-align: top;}
+.contact li {margin: 15px 0; padding-left: 30px; display: block;}
+.contact > ul > .in {}
+.contact > ul > .address {background: url(../img/dif/map.png) no-repeat 5px 5px;}
+.contact > ul > .phone {background: url(../img/dif/telef.png) no-repeat 5px 0;}
+.contact > ul > .fax {background: url(../img/dif/fax2.png) no-repeat 5px 0;}
+.contact > ul > .mail {background: url(../img/dif/mail.png) no-repeat 5px 0;}
+.contact a {font-size: 18px; background: #4791d2; color: #fff; text-decoration: none;
+	padding: 10px 20px; width: auto; height: auto; display: inline-block;}
+.contact a:hover {background: #3d31c5;}
+
+/*login*/
+.login {text-align: center; padding: 30px 0;  min-height: 300px;}
+.login .error {color: red;}
+.login p {padding: 10px 0;}
+.login form {background-color: #ebeff8; margin: auto; width: 250px;
+	border: 2px dotted #677798; padding: 20px;}
+.login form label {width: 150px; display: block; text-align: left;
+	font-size: 18px;}
+.login form input {display: block; width: 250px; box-sizing: border-box;
+	padding: 5px 0; font-size: 18px;}
+.login form input[type="submit"] {background-color: #4791d2; border: none;
+	font-size: 22px; height: auto; color: #fff; padding: 5px 0;}
+.login form input[type="submit"]:hover {background-color: #3d31c5;}
+
+/*signin*/
+.signin {text-align: center; padding: 30px 0;  min-height: 300px;}
+.signin form {margin: auto; width: 900px; text-align: left;}
+.signin .right_sector {overflow: hidden;}
+.signin .left_sector {float: left;}
+.signin .error {color: red;}
+.signin label, .signin span.pol {display: inline-block; width: 150px; margin: 10px 20px;
+	text-align: right;}
+.signin span ~ label {width: auto; margin: 0 10px;}
+.signin select {height: 30px;}
+.signin input {height: 26px;}
+.signin input, .signin select {width: 200px; font-size: 1.2em;}
+.signin input[type="radio"], .signin input[type="checkbox"] {width: auto; vertical-align: middle;}
+.signin label[for="check"]{width: auto;}
+.signin input[type="submit"] {background: #4791d2; border: none; color: #fff;
+	padding: 10px 20px; display: inline-block; height: auto; width: auto;}
+.signin input[type="submit"]:hover {background: #3d31c5;}
+.signin legend {margin-left: 50px; font-size: 22px; padding: 0 10px; color: #677798;}
+.signin a {font-size: 1.2em; background: #4791d2; color: #fff; text-decoration: none;
+	padding: 10px 20px; display: inline-block; height: auto; width: auto;}
+.signin a:hover {background: #3d31c5;} 
+.signin label a {font-size: 16px; color: blue; padding: 0; text-decoration: underline; background: none;height: auto; width: auto;}
+.signin label a:hover {color: #3d31c5; background: none;} 
+	
+
+/*information*/
+.information {text-align: center; padding: 30px 0;  min-height: 300px;}
+.information p, .information h2 {text-align: center;}
+.information p {margin: 10px 0;}
+.information input[type="submit"] {font-size: 18px; background: #4791d2; border: none; color: #fff;
+	padding: 5px 15px; display: inline-block;}
+.information input[type="submit"]:hover {background: #3d31c5;}
+.information table {border-collapse: collapse; margin: auto; font-size: 14px;text-align: center;}
+.information table td{/* border: 1px solid grey; border-top: 2px solid grey; border-bottom: 2px solid grey;  */padding: 10px; }
+.information table tr.table_head {font-weight: bold;}
+.information a {font-size: 18px; background: #4791d2; color: #fff; text-decoration: none;
+	padding: 5px 15px; display: inline-block; height: auto; width: auto;}
+.information a:hover {background: #3d31c5;}
+.information .error {color: red;}
+.information span {display: inline-block; width: 200px; text-align: right; padding-right: 15px;}
+.information span.active {width: 250px; margin-left: -190px;}
+.information span.active2 {width: 250px; margin-left: -90px;}
+.information span.select_insert {width: 250px; margin-left: -170px;}
+.information button {font-size: 18px; background: #4791d2; color: #fff; text-decoration: none;
+	padding: 5px 15px; display: inline-block; border:none; height: auto; width: auto;}
+.information button:hover {background: #3d31c5;}
+
+/*err*/
+.err {color: red; text-align: center; font-size: 16px;}
+
+/*error*/
+.error {text-align: center; padding: 30px 0; min-height: 300px;}
+.error .red {color: red; text-align: center; font-size: 22px;}
+.error button {font-size: 18px; background: #4791d2; color: #fff; text-decoration: none;
+	padding: 5px 15px; display: inline-block; border:none; height: auto; width: auto;}
+.error button:hover {background: #3d31c5;}
+.error a {font-size: 18px; background: #4791d2; color: #fff; text-decoration: none;
+	padding: 5px 15px; display: inline-block; height: auto; width: auto;}
+.error a:hover {background: #3d31c5;}
+
+/*footer*/
+footer {background: #3d31c5;}
+.fotter_big {width: 940px; margin: auto; padding: 10px 30px;}
+.fotter_big ul {display: inline-block; vertical-align: middle; max-width: 600px;}
+.fotter_big li {display: inline-block; font-size: 14px; padding: 0 10px;
+font-weight: bold;}
+.fotter_big span {display: inline-block; vertical-align: middle; color: #fff;}
+.fotter_big span.log2 a{width: auto;}
+.fotter_big span a {display: inline-block; vertical-align: middle; width: 30px;}
+.fotter_big span a img {width: 100%; opacity: 0.7; height: auto;}
+.fotter_big span a:hover img {opacity: 1;}
+.fotter_big span.log2 img { width: 120px; margin-right: 10px; height: auto;}

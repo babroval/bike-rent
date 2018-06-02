@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="home" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/common/home.jsp" />
+	</definition>
+
+	<definition name="newsPage" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/common/news.jsp" />
+	</definition>
+
+	<definition name="pointsList" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/points/pointsList.jsp" />
+	</definition>
+
+	<definition name="pointRegistration" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/points/pointRegistration.jsp" />
+	</definition>
+
+	<definition name="pointSuccess" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/points/pointSuccess.jsp" />
+	</definition>
+
+	<definition name="bikesList" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/bikes/bikesList.jsp" />
+	</definition>
+
+	<definition name="bikeRegistration" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/bikes/bikeRegistration.jsp" />
+	</definition>
+
+	<definition name="bikeSuccess" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/bikes/bikeSuccess.jsp" />
+	</definition>
+
+	<definition name="usersList" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/users/usersList.jsp" />
+	</definition>
+
+	<definition name="userRegistration" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/users/userRegistration.jsp" />
+	</definition>
+
+	<definition name="userSignIn" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/users/userSignIn.jsp" />
+	</definition>
+
+	<definition name="userSuccess" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/users/userSuccess.jsp" />
+	</definition>
+
+	<definition name="ordersList" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orders/ordersList.jsp" />
+	</definition>
+
+	<definition name="map" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/points/map.jsp" />
+	</definition>
+
+	<definition name="order" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/orders/order.jsp" />
+	</definition>
+
+	<definition name="orderSuccess" extends="main">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orders/orderSuccess.jsp" />
+	</definition>
+
+</tiles-definitions>
