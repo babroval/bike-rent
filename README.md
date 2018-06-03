@@ -81,6 +81,10 @@ Usage
 Bike Rent is easiest to use with [Eclipse IDE][eclipse]:  
 File -> Import -> Git -> Projects From Git > URI
 
+To create a database, execute script from file https://github.com/babroval/bike-rent/blob/master/src/main/resources/db_bike_script.sql
+You can do it for example from MySQL Command Line Client: 
+mysql> source C:/db_bike_script.sql
+
 
 Contributing
 ------------
