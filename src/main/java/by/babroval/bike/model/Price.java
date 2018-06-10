@@ -71,7 +71,7 @@ public class Price implements Serializable {
 			return true;
 		if (obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if (!(obj instanceof Price))
 			return false;
 		Price other = (Price) obj;
 		if (description == null) {

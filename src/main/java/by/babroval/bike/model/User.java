@@ -204,7 +204,7 @@ public class User implements Serializable {
 			return true;
 		if (obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if (!(obj instanceof User))
 			return false;
 		User other = (User) obj;
 		if (birth == null) {

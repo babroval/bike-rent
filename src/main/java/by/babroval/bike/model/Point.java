@@ -153,7 +153,7 @@ public class Point implements Serializable {
 			return true;
 		if (obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if (!(obj instanceof Point))
 			return false;
 		Point other = (Point) obj;
 		if (activeStatus == null) {

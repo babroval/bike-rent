@@ -126,7 +126,7 @@ public class Bike implements Serializable {
 			return true;
 		if (obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if (!(obj instanceof Bike))
 			return false;
 		Bike other = (Bike) obj;
 		if (availableStatus == null) {
