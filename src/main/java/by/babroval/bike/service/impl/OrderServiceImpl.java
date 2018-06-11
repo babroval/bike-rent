@@ -88,8 +88,8 @@ public class OrderServiceImpl implements OrderService {
 
 			Long time = entity.getFinishTime().getTime() - entity.getStartTime().getTime();
 
-			BigDecimal totalTime = new BigDecimal(time.toString());
-			BigDecimal convertTimeValue = new BigDecimal(DateUtils.CONVERT_TIME_MINUTE_VALUE.toString());
+			BigDecimal totalTime = new BigDecimal(String.valueOf(time));
+			BigDecimal convertTimeValue = new BigDecimal(String.valueOf(DateUtils.CONVERT_TIME_MINUTE_VALUE));
 			BigDecimal totalCost = totalTime.divide(convertTimeValue, 10, BigDecimal.ROUND_HALF_UP);
 
 			Price price = bike.getPrice();
