@@ -16,7 +16,7 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 		<springframework.version>5.2.3.RELEASE</springframework.version>
 		<hibernate.version>4.3.10.Final</hibernate.version>
-		<mysql.version>5.1.37</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<tiles.version>3.0.5</tiles.version>
 		<logging-slf4j.version>1.7.0</logging-slf4j.version>
 		<testng.version>6.9.9</testng.version>
